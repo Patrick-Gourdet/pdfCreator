@@ -1,4 +1,141 @@
 # THIS IS A SERVICE WHICH LETS YOU CONVERT A JSON FILE TO PDF
+#Use Case Given a JSON String with Format, Header Body, Text Element defined as seen below. Will Create a PDF accordingly. All available attributes are also depicted below in the documentation.  
+```
+{
+  "PageSize": "A4",
+  "PageMargins": {
+    "Top": 20,
+    "Bottom": 20,
+    "Left": 20,
+    "Right": 20
+  },
+  "Elements": [
+    {
+      "$type": "EsImage",
+      "Base64": "",
+      "Align": "Center",
+      "Width": 75
+    },
+    {
+      "$type": "ESTEXT",
+      "Content": "Unparalleled Property Services",
+      "FontName": "Verdana",
+      "FontSize": 8,
+      "Align": "Center"
+    },
+    {
+      "$type": "esline",
+      "WidthPercent": 50,
+      "Align": "Center",
+      "Margins": {
+        "Top": 20,
+        "Bottom": 30
+      }
+    },
+    {
+      "$type": "ESTEXT",
+      "Content": "Questionnaire",
+      "FontName": "Verdana",
+      "FontSize": 14,
+      "Align": 2
+    },
+    {
+      "$type": "esline",
+      "WidthPercent": 50,
+      "Align": "Center",
+      "Margins": {
+        "Top": 20,
+        "Bottom": 30
+      }
+    },
+    {
+      "$type": "ESTEXT",
+      "Content": "The Township Community Mastre Association, Inc.",
+      "FontName": "Verdana",
+      "FontSize": 20,
+      "Align": 2
+    },
+    {
+      "$type": "ESTEXT",
+      "Content": "\"Proudly managed by Castle Management LLC.\"",
+      "FontName": "Verdana",
+      "FontSize": 20,
+      "Align": 2
+    },
+    {
+      "$type": "EsTable",
+      "ColumnsWidthPercs": [
+        50,
+        20,
+        30
+      ],
+      "HeaderCells": [
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "The certificate has been prepared"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Date 00\\00\\00"
+            }
+          ]
+        }
+      ],
+      "BodyCells": [
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Pwner(s):"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Yo Mama"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Buyer(s)"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Yo Daddy"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Address"
+            }
+          ]
+        },
+        {
+          "Elements": [
+            {
+              "$type": "EsText",
+              "Content": "Up S*&^t Creeks Ave 666 DoomsVille"
+}]}]}]} 
+```
+
 ## Should you have any questions or need help setting up dont hesitate to write 
 ## @admin@irondigital.dev
 
