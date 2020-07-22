@@ -1,4 +1,5 @@
-# THIS IS A SERVICE WHICH LETS YOU CONVERT A JSON FILE TO PDF
+# THIS IS A SERVICE WHICH LETS YOU CONVERT A JSON STRING TO PDF
+[![Build Status](https://img.shields.io/badge/Development-build-green)](https://fedigital.org)
 #Use Case Given a JSON String with Format, Header Body, Text Element defined as seen below. Will Create a PDF accordingly. All available attributes are also depicted below in the documentation.  
 ```
 {
